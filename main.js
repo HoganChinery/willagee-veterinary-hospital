@@ -39,7 +39,7 @@
     }
     function next() { go(idx + 1); }
     function prev() { go(idx - 1); }
-    function play() { timer = setInterval(next, 5000); }
+    function play() { timer = setInterval(next, 2800); }
     function stop() { if (timer) { clearInterval(timer); timer = null; } }
     function reset() { stop(); play(); }
 
