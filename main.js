@@ -14,6 +14,56 @@
     });
   }
 
+  // --- Hero photo carousel (auto-advance, arrows, dots, swipe) ---
+  var carousel = document.querySelector("[data-carousel]");
+  if (carousel) {
+    var track = carousel.querySelector(".car-track");
+    var slides = Array.prototype.slice.call(track.children);
+    var dotsWrap = carousel.querySelector(".car-dots");
+    var idx = 0;
+    var timer = null;
+
+    slides.forEach(function (_, i) {
+      var d = document.createElement("button");
+      d.className = "car-dot" + (i === 0 ? " active" : "");
+      d.setAttribute("aria-label", "Go to photo " + (i + 1));
+      d.addEventListener("click", function () { go(i); reset(); });
+      dotsWrap.appendChild(d);
+    });
+    var dots = Array.prototype.slice.call(dotsWrap.children);
+
+    function go(i) {
+      idx = (i + slides.length) % slides.length;
+      track.style.transform = "translateX(" + -idx * 100 + "%)";
+      dots.forEach(function (d, n) { d.classList.toggle("active", n === idx); });
+    }
+    function next() { go(idx + 1); }
+    function prev() { go(idx - 1); }
+    function play() { timer = setInterval(next, 5000); }
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
+    function reset() { stop(); play(); }
+
+    var nx = carousel.querySelector(".car-arrow.next");
+    var pv = carousel.querySelector(".car-arrow.prev");
+    if (nx) nx.addEventListener("click", function () { next(); reset(); });
+    if (pv) pv.addEventListener("click", function () { prev(); reset(); });
+
+    carousel.addEventListener("mouseenter", stop);
+    carousel.addEventListener("mouseleave", play);
+
+    var x0 = null;
+    track.addEventListener("touchstart", function (e) { x0 = e.touches[0].clientX; stop(); }, { passive: true });
+    track.addEventListener("touchend", function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0;
+      if (Math.abs(dx) > 40) { dx < 0 ? next() : prev(); }
+      x0 = null;
+      play();
+    }, { passive: true });
+
+    play();
+  }
+
   // --- Appointment request form (Web3Forms, no server needed) ---
   var form = document.getElementById("appointmentForm");
   if (!form) return;
