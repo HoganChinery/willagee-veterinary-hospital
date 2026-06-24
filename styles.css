@@ -218,9 +218,17 @@ footer.site .brand span{color:#9fb6a8}
   .nav-toggle{display:block;z-index:60}
   .hero-video{height:72vh;min-height:460px}
   .vid-content{background:linear-gradient(180deg,rgba(20,38,28,.5) 0%,rgba(20,38,28,.45) 100%)}
+  .brand .mark{width:80px;height:80px}
+  .brand b{font-size:1.5rem}
+  .brand span{font-size:0.9rem}
+  header.site .wrap{padding:16px 24px}
 }
 @media(max-width:560px){
   section{padding:60px 0}
   .svc-grid,.svc-grid.cols-3,.feat-grid,.foot-grid{grid-template-columns:1fr}
   .hero-video{height:65vh;min-height:400px}
+  .brand .mark{width:60px;height:60px}
+  .brand b{font-size:1.25rem}
+  .brand span{font-size:0.8rem}
+  header.site .wrap{padding:12px 20px}
 }
