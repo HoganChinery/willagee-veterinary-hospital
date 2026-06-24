@@ -5,7 +5,7 @@
 :root{
   --sage:#6f8f7e; --sage-deep:#4f6b5c; --sage-soft:#e7efe9;
   --cream:#f8f4ec; --cream-2:#f1eae0;
-  --terracotta:#d97a5b; --terracotta-deep:#c0633f;
+  --terracotta:#2a7d91; --terracotta-deep:#1d6070;
   --ink:#2c352f; --ink-soft:#56615a;
   --white:#fff; --radius:18px;
   --shadow:0 14px 40px rgba(60,78,68,.12);
@@ -181,7 +181,7 @@ nav.main a.link:hover,nav.main a.link.active{color:var(--terracotta-deep)}
 .form-status{margin-top:16px;padding:14px 16px;border-radius:12px;font-weight:700;display:none}
 .form-status.show{display:block}
 .form-status.ok{background:var(--sage-soft);color:var(--sage-deep)}
-.form-status.err{background:#fbe6de;color:var(--terracotta-deep)}
+.form-status.err{background:#fbe6de;color:#c0633f}
 button[disabled]{opacity:.6;cursor:not-allowed}
 
 /* map */
@@ -191,7 +191,7 @@ button[disabled]{opacity:.6;cursor:not-allowed}
 /* booking CTA band */
 .booking{background:var(--terracotta);color:#fff;text-align:center}
 .booking h2{color:#fff;font-size:clamp(2rem,3.8vw,2.8rem);margin-bottom:14px}
-.booking p{color:#ffe9df;max-width:56ch;margin:0 auto 26px;font-size:1.08rem}
+.booking p{color:#c8e8f0;max-width:56ch;margin:0 auto 26px;font-size:1.08rem}
 .booking .hero-cta{justify-content:center}
 
 /* footer */
