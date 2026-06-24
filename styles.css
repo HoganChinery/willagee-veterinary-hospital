@@ -37,7 +37,7 @@ section{padding:84px 0}
 .btn-white:hover{transform:translateY(-2px);box-shadow:var(--shadow-sm)}
 
 /* top info bar */
-.topbar{background:var(--terracotta-deep);color:#c8e8f0;font-size:.88rem;font-weight:600}
+.topbar{background:#1a5c88;color:#c8e8f0;font-size:.88rem;font-weight:600}
 .topbar .wrap{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center;justify-content:center;padding:9px 24px;text-align:center}
 .topbar a{color:#fff;font-weight:700;border-bottom:1px solid rgba(255,255,255,.4)}
 
