@@ -36,8 +36,8 @@ section{padding:84px 0}
 .btn-white{background:#fff;color:var(--sage-deep)}
 .btn-white:hover{transform:translateY(-2px);box-shadow:var(--shadow-sm)}
 
-/* emergency top bar */
-.topbar{background:var(--sage-deep);color:#eaf2ec;font-size:.88rem;font-weight:600}
+/* top info bar */
+.topbar{background:var(--terracotta-deep);color:#c8e8f0;font-size:.88rem;font-weight:600}
 .topbar .wrap{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center;justify-content:center;padding:9px 24px;text-align:center}
 .topbar a{color:#fff;font-weight:700;border-bottom:1px solid rgba(255,255,255,.4)}
 
@@ -45,9 +45,9 @@ section{padding:84px 0}
 header.site{position:sticky;top:0;z-index:50;background:rgba(248,244,236,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--cream-2)}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;padding:15px 24px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand .mark{width:44px;height:44px;border-radius:12px;background:#fff;display:grid;place-items:center;flex:0 0 auto;overflow:hidden;padding:3px}
+.brand .mark{width:44px;height:44px;border-radius:12px;background:transparent;display:grid;place-items:center;flex:0 0 auto;overflow:hidden;padding:0}
 .logo-img{width:100%;height:100%;object-fit:contain;display:block}
-footer.site .brand .mark{background:var(--sage);padding:5px}
+footer.site .brand .mark{background:transparent;padding:0}
 footer.site .logo-img{filter:brightness(0) invert(1)}
 .brand .bt{display:flex;flex-direction:column;line-height:1}
 .brand b{font-family:'Raleway',sans-serif;font-weight:600;font-size:1.12rem}
