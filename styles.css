@@ -15,7 +15,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Nunito Sans',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased}
-h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;font-weight:500;line-height:1.12;letter-spacing:-.01em}
+h1,h2,h3,h4{font-family:'Raleway',system-ui,sans-serif;font-weight:400;line-height:1.12;letter-spacing:.01em}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
@@ -50,7 +50,7 @@ header.site .wrap{display:flex;align-items:center;justify-content:space-between;
 footer.site .brand .mark{background:var(--sage);padding:5px}
 footer.site .logo-img{filter:brightness(0) invert(1)}
 .brand .bt{display:flex;flex-direction:column;line-height:1}
-.brand b{font-family:'Playfair Display',serif;font-weight:600;font-size:1.12rem}
+.brand b{font-family:'Raleway',sans-serif;font-weight:600;font-size:1.12rem}
 .brand span{font-family:'Nunito Sans';font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage-deep);margin-top:3px}
 nav.main{display:flex;align-items:center;gap:28px}
 nav.main a.link{font-weight:700;font-size:.95rem;color:var(--ink-soft)}
@@ -130,12 +130,22 @@ nav.main a.link:hover,nav.main a.link.active{color:var(--terracotta-deep)}
 .feat h3{font-family:'Nunito Sans';font-weight:800;font-size:1.06rem;margin-bottom:6px}
 .feat p{font-size:.92rem;color:var(--ink-soft)}
 
+/* team grid */
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:28px;margin-top:12px}
+.team-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column}
+.team-photo{aspect-ratio:1;overflow:hidden}
+.team-photo img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.team-info{padding:26px 24px}
+.team-info h3{font-size:1.5rem;margin-bottom:4px}
+.team-role{font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--terracotta-deep);margin-bottom:14px}
+.team-info p{font-size:.94rem;color:var(--ink-soft);line-height:1.75}
+
 /* emergency callout */
 .emergency{background:var(--sage-deep);color:#eef4f0}
 .emergency .wrap{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
 .emergency h2{color:#fff;font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:10px}
 .emergency p{color:#cfe0d6;max-width:56ch}
-.emergency .big{font-family:'Playfair Display',serif;font-size:2rem;color:#fff;display:block;text-align:right}
+.emergency .big{font-family:'Raleway',sans-serif;font-size:2rem;font-weight:300;color:#fff;display:block;text-align:right}
 .emergency .lbl{font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:#a9c7b6;text-align:right}
 
 /* hours table */
