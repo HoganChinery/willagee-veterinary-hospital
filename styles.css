@@ -226,13 +226,20 @@ footer.site .brand span{color:#9fb6a8}
 @media(max-width:560px){
   section{padding:60px 0}
   .svc-grid,.svc-grid.cols-3,.feat-grid,.foot-grid{grid-template-columns:1fr}
-  .hero-video{height:82svh;min-height:520px;max-height:none}
-  .vid-content{align-items:flex-end;padding-bottom:36px}
-  .vid-content h1{font-size:2rem;margin-bottom:12px}
-  .vid-content .lead{font-size:.92rem;margin-bottom:16px;max-width:100%}
-  .vid-open-badge{font-size:.8rem;padding:6px 12px;margin-bottom:12px}
-  .hero-cta{flex-direction:column;gap:10px}
-  .hero-cta .btn{width:100%;justify-content:center;padding:13px 20px}
+  /* hero */
+  .hero-video{height:100vh;min-height:0;max-height:none}
+  .vid-content .eyebrow{display:none}
+  .vid-content h1{font-size:1.8rem;margin-bottom:10px}
+  .vid-content .lead{font-size:.9rem;margin-bottom:14px;max-width:100%}
+  .vid-open-badge{font-size:.78rem;padding:5px 11px;margin-bottom:10px}
+  .hero-cta{flex-direction:column;gap:8px}
+  .hero-cta .btn{width:100%;justify-content:center;padding:13px 20px;font-size:.92rem}
+  /* infostrip */
+  .infostrip .wrap{grid-template-columns:1fr;gap:0}
+  .info-card{padding:16px 20px;border-bottom:1px solid var(--cream-2)}
+  .info-card:last-child{border-bottom:none}
+  .info-card .ic{width:38px;height:38px}
+  /* header */
   .brand .mark{width:60px;height:60px}
   .brand b{font-size:1.25rem}
   .brand span{font-size:0.8rem}
