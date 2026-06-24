@@ -228,6 +228,7 @@ footer.site .brand span{color:#9fb6a8}
   .svc-grid,.svc-grid.cols-3,.feat-grid,.foot-grid{grid-template-columns:1fr}
   /* hero */
   .hero-video{height:100vh;min-height:0;max-height:none}
+  .vid-content{align-items:center}
   .vid-content .eyebrow{display:none}
   .vid-content h1{font-size:1.8rem;margin-bottom:10px}
   .vid-content .lead{font-size:.9rem;margin-bottom:14px;max-width:100%}
